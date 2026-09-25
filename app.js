@@ -3,7 +3,7 @@ var tl = gsap.timeline({scrollTrigger:{
     start:"0% 95%",
     end:"70% 50%",
     scrub:true
-    // markers:"true"
+
 }})
 tl.to("#fanta",{
  top:"120%",
@@ -32,7 +32,6 @@ tl.to("#leaf1",{
     left:"0%",
     rotate:"130deg"
 },'orange')
-
 
 var tl2 = gsap.timeline({
     scrollTrigger: {
@@ -96,15 +95,16 @@ tl2.fromTo("#Cocacola",
 );
 
 tl2.to("#cut-orange",{
-    width:"17%",
-    left:"42%",
+    
+    left:"43%",
     top:"210%"
 },'ca')
 
 tl2.to("#fanta",{
-    width:"25%",
-    left:"38%",
-    top:"218%"
+   
+      scale: 0.7,
+    left:"33%",
+    top:"205%"
 },'ca')
 
 
@@ -162,5 +162,7 @@ gsap.from(".right-two p", {
         toggleActions: "play none none reverse"
     }
 });
+
+
 
 
